@@ -1,8 +1,8 @@
-FROM python:3.6
+FROM python:3.9
 
 RUN apt-get update
 
-COPY .requirements.txt /tmp/requirements.txt
+COPY requirements.txt /tmp/requirements.txt
 
 RUN pip install -r /tmp/requirements.txt
 
